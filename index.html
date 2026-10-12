@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>CIDR Atlas: IPv4 and IPv6 subnet calculator</title>
+<meta name="description" content="A subnet calculator that shows the bits. IPv4 and IPv6, split, VLSM planner, aggregate and subtract, device config snippets. Works offline; nothing leaves your browser.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='8' y='8' width='84' height='84' fill='none' stroke='%23b02f14' stroke-width='8'/><rect x='8' y='8' width='42' height='84' fill='%23b02f14'/></svg>">
+<link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to the calculator</a>
+<header>
+    <h1>CIDR&nbsp;Atlas</h1>
+    <p class="tag">Subnets, with the bits showing.</p>
+    <nav id="tabs" role="tablist" aria-label="Tools">
+        <button role="tab" data-tab="inspect">Inspect</button>
+        <button role="tab" data-tab="split">Split</button>
+        <button role="tab" data-tab="vlsm">VLSM plan</button>
+        <button role="tab" data-tab="lists">Lists</button>
+    </nav>
+</header>
+
+<main id="app" tabindex="-1">
+    <noscript><p class="err">This calculator needs JavaScript. It runs entirely in your browser and sends nothing anywhere.</p></noscript>
+</main>
+
+<footer>
+    <p>IPv4 and IPv6, exact to 128 bits. Runs in your browser; nothing is sent or stored. <a href="https://github.com/muhdharris/cidr-atlas">Source and command line</a>.</p>
+    <p class="keys"><kbd>/</kbd> focus the box &nbsp; <kbd>[</kbd> <kbd>]</kbd> previous or next block &nbsp; <kbd>↑</kbd> <kbd>↓</kbd> in the box change the prefix</p>
+</footer>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>

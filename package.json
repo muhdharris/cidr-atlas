@@ -1,0 +1,10 @@
+{
+  "name": "cidr-atlas",
+  "version": "1.0.0",
+  "description": "IPv4 and IPv6 subnet calculator that shows the bits. Web app and command line, no dependencies.",
+  "type": "module",
+  "bin": { "cidr": "bin/cidr.js" },
+  "scripts": { "test": "node --test test/engine.test.js test/reference.test.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
